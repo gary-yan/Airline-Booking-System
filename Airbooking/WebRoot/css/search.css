@@ -1,0 +1,52 @@
+
+body{}
+.container { height:850px;width:100%;}
+.header{background:#242424;width: 100%;height:80px ;opacity: 0.9;color: orange;font-size: 30px;font-family: "Arial";min-width: 800px;}
+ .header img{position: relative;top: 15px;left: 10%;}
+ .header span{position: relative;left: 15%;top: 15px}
+ .header span:hover{cursor: pointer;}
+ .ulb span{color:white;}
+  .ulb a{color:orange;}
+  .ulb a:hover{color:white;}
+.bh{float: right;color: white;font-family: "Arial";margin-top:20px;font-size: 20px;position:relative;right:10%;}
+ .bh:hover{color: white;}
+.help{float: right;position:relative;right:12%;color: orange;font-family: "Arial";font-size: 20px;margin-top:15px;text-decoration:none;}
+.clear{ clear:both}
+ .help:hover{color: white;text-decoration:none;}
+.content { height:80%;width:100%;color:white; margin-top: 10px;}
+ 
+.nav11{;width: 100%;height:60px ;opacity: 0.9;
+	color: orange;font-size: 30px;font-family: "Arial";background:#242424;margin-top: 10px;}
+
+.ex {font-color: black;float:left;}
+.ex:hover{cursor:pointer;}
+.nav1{width:70%;min-width: 700px;height: 60px;margin: 0 auto;}
+
+.clear{ clear:both}
+.inp{float: left;width: 25%;height: 30px;margin-top: 15px;font-family: "Arial";color:black;font-size: 16px; }
+
+.date{width: 20%;max-width: 25%;margin-left: 5%;font-size: 12px;}
+
+
+.ser{background:orange ;width:80px; margin-right:5%;font-size: 15px;text-align: center;line-height: 10px;float: right;}
+
+ .bot{width: 100%;height: 50px; }
+.bot p{color: black;margin: 0 auto;}
+.nav li{ font-size: 18px;width: 33%;margin: 0 0;}
+.tic{width: 720px;height: 160px;padding:0 0 0 0;background:#242424;opacity: 0.9;color: white;margin-top: 1px;}
+li{list-style: none;}
+.th{width: 100%;margin: 0 auto;}
+.tc{width: 100%;height: 50px;margin: 0 auto;}
+.tc li{float: left;margin-left: 10px;}
+.total{color: orange;font-size: 26px;margin-top:5px;padding-left: 10px;}
+.time{font-size: 32px;padding-left: 10px;}
+.three{font-size: 26px;margin-top:5px;padding-left: 10px;}
+.price{font-size: 32px;padding-left: 50px;}
+.currency{margin-left: 5px;marfont-size: 16px;position: relative;top: 17px;}
+.from{position: relative;left: 87px;}
+.to{position: relative;left: 145px;}
+.arrow{width: 100px;background: white;float: left;position: relative;left: 122px;bottom: 2px}
+.tb{height: 30px;}
+.rating{float: right;font-size: 16px;position: relative;right:615px;}
+.book{float: right;position: relative;right: 0px;line-height: 15px;bottom: 10px;}
+

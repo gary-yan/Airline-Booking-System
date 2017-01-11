@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <LINK href="img/ab.png" type=image/x-icon rel="shortcut icon" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Airline Booking System</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="jquery/jquery-3.1.1.min.js"></script>
+ </head>
+ <style type="text/css">
+ .header{background:#242424;width: 100%;min-width: 600px;height:80px ;opacity: 0.9;color: orange;font-size: 30px;font-family: "Arial";margin: 0 auto;}
+ .header img{position: relative;top: 15px;left: 10%;}
+ .header span{position: relative;left: 15%;top: 15px}
+ .header span:hover{cursor: pointer;}
+ .container{width: 100%;height: 780px;}
+ .content{width: 100%;height: 680px;}
+ .nav{width: 350px;background:#242424;height: 500px;margin: 0 auto;position:relative;top:100px;opacity: 0.8;}
+ .bh{float: right;margin-right:10%;color: orange;font-family: "Arial";margin-top:25px;}
+ .bh:hover{color: white;}
+ .clear{ clear:both} 
+ .bottom{width: 100%;height: 50px;}
+.bottom p{color: white;margin: 0 auto;}
+
+.f1{font-family:"Arial";width: 250px;margin-left:20px;margin-top:40px;margin: 0 auto;}
+
+.f1 h5{color: white;}
+.name{width: 110px;}
+.password{width: 100%;}
+.f1 input{margin-top: px;color: black;}
+.dept{width: 15px;height: 15px;}
+
+.f1  span{color: white;font-size:12px;margin-left: 2px;}
+.b1{width: 30%;margin-top: 20px;margin-left:0px;}
+.b2{width: 30%;margin-top: 20px;margin-left:95px;}
+.ulb a{color: orange;}
+.ulb span{color: white;}
+ </style>
+ <body style="background-image: url(img/header-bg.jpg);
+  background-repeat: repeat-x;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;height: 810px;width: 100%;">
+ <div class="container" >
+   <div class="header">
+ <a href="index.html" style="color:orange;text-decoration:none;"> <img src="img/ab.png"><span>Airline Booking</span></a>
+<a href="index.html"><h3 class="bh">Home</h3></a>
+   </div>
+   <div class="content">
+    <div class="nav">
+<form class="f1" action="Sign-in.jsp" method="post" onsubmit="return validate()">
+ <form action="demo_form.asp">
+            <h5>Name*</h5>
+            <input class="name"  type="" name="firstname" value="" placeholder="First" maxlength="10" required>
+            <input class="name" style="margin-left: 20px;" type="" name="lastname" value="" placeholder="Last" maxlength="10" required>
+			<br/>
+            <br/>
+			<input id="1" type="checkbox" name="g1" value="1" class="dept" onclick="check(this)" /><span>Male</span>
+      		<input id="2" type="checkbox" name="g2" value="2" class="dept" onclick="check(this)" /><span>Female</span>
+      		<input style="margin-left: 26px" name="g3"  value="3" id="2" type="checkbox" checked="checked"  class="dept" onclick="check(this)" /><span>Secret</span>
+
+            <h5>E-Mail address*</h5>
+			<input  class="password" type="" name="email" value=""  placeholder="xyz@domain.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+			<h5>Telephone number</h5>
+			<input  class="password" type="" name="tele" value=""  placeholder="+46" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" maxlength="9" required >
+			
+            <br/>
+ 
+		<h5>Birthday</h5>	
+     <div style="width: 100%;">
+		 <select class="form-control" style="width: 36%;float: left;" name="year">
+		    <option>Secret</option>
+			<option>2016</option>
+			<option>2015</option>
+			<option>2014</option>
+			<option>2013</option>
+			<option>2012</option>
+			<option>2011</option>
+			<option>2010</option>
+			<option>2009</option>
+			<option>2008</option>
+			<option>2007</option>
+			<option>2006</option>
+			<option>2005</option>
+			<option>2004</option>
+			<option>2003</option>
+			<option>2002</option>
+			<option>2001</option>
+			<option>2000</option>
+			<option>1999</option>
+			<option>1998</option>
+		    <option>1997</option>
+			<option>1996</option>
+			<option>1995</option>
+			<option>1994</option>
+			<option>1993</option>
+			<option>1992</option>
+			<option>1991</option>
+			<option>1990</option>
+			<option>1989</option>
+			<option>1988</option>
+		    <option>1987</option>
+			<option>1986</option>
+            <option>1985</option>
+            <option>1984</option>
+            <option>1983</option>
+            <option>1982</option>
+            <option>1981</option>
+            <option>1980</option>
+            <option>1979</option>
+            <option>1978</option>
+            <option>1977</option>
+            <option>1976</option>
+            <option>1975</option>
+            <option>1974</option>
+            <option>1973</option>
+            <option>1972</option>
+            <option>1971</option>
+            <option>1970</option>
+            <option>1969</option>
+            <option>1968</option>
+
+		</select>
+		 <select class="form-control" name="month" style="width: 25%;margin-left:16px;float: left;">
+		    <option>--</option>
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+			<option>6</option>
+			<option>7</option>
+			<option>8</option>
+			<option>9</option>
+			<option>10</option>
+			<option>11</option>
+			<option>12</option>
+			
+		</select>
+          <select class="form-control" name="day" style="width: 25%;margin-left:16px;float: left;">
+            <option>--</option>
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+			<option>6</option>
+			<option>7</option>
+			<option>8</option>
+			<option>9</option>
+			<option>10</option>
+			<option>11</option>
+			<option>12</option>
+			<option>13</option>
+			<option>14</option>
+			<option>15</option>
+			<option>16</option>
+			<option>17</option>
+			<option>18</option>
+			<option>19</option>
+			<option>20</option>
+			<option>21</option>
+			<option>22</option>
+			<option>23</option>
+			<option>24</option>
+			<option>25</option>
+			<option>26</option>
+			<option>27</option>
+			<option>28</option>
+			<option>29</option>
+			<option>30</option>
+			<option>31</option>
+		</select>
+			</div>
+ <br/> <br/>
+			<h5>Create a password*</h5>
+			<input  class="password" type="password" name="p1" value="" pattern=".{6,}" title="Six or more characters" required> 
+			<h5>Confirm your password*</h5>
+			<input  class="password" type="password" name="p2" value="" >
+			<button type="submit" class="btn btn-primary b1"  >Submit</button>
+			<a href="index.html">
+			<button type="button" class="btn btn-primary b2" >Back</button></a>
+
+
+			
+                </form>
+		</form>
+    </div>
+   </div>
+   
+   <center>
+    <div class="bottom"><p>Copyright © 2016 BTH.&nbsp;PA2515&nbsp;Team 8.   &nbsp;All rights reserved.</p>
+          <ul class="ulb">
+           <a href="">Privacy Policy</a><span> &nbsp;|&nbsp;</span>
+           <a href="">Terms of Use</a><span>&nbsp;|&nbsp;</span>
+           <a href="">Need Help?</a>
+          </ul>
+      </div>
+      </center>
+ </div>
+<script type="text/javascript" >
+function validate(){
+ 
+ var p1 = document.getElementsByName("p1")[0];
+ var p2 = document.getElementsByName("p2")[0];
+ 
+   if(p1.value.length < 1){
+    
+     alert("Enter your password please!");
+     return false;
+    
+  } else if(p1.value.length > 20){
+ 
+ 	alert("The password  should be less than 20!");
+     return false;
+ }
+    if(p2.value.length < 1){
+    
+     alert("Enter your password again please!");
+     return false;
+     
+    
+  } else if(p2.value.length > 20){
+ 
+ 	alert("The password  should be less than 20!");
+     return false;
+ }
+  
+    if(p2.value != p1.value ){
+    
+     alert("The two passwords are not same!");
+     return false;
+     
+    
+  }
+    return true;
+ }
+ </script>
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>  
+<script type="text/javascript" >
+  function check(obj) {
+            $('.dept').attr('checked', false);
+            $(obj).attr('checked', true);
+        }
+</script> 
+
+
+
+
+
+
+
+</body>
+</html>

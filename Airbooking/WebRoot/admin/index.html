@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <LINK href="../img/logo.ico" type=image/x-icon rel="shortcut icon" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Airline Booking System</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+
+
+
+<script src="../jquery/jquery-3.1.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+ </head>
+ <style type="text/css">
+ .header{background:#242424;width: 100%;height:80px ;opacity: 0.9;position: absolute;color: orange;font-size: 30px;font-family: "Arial";}
+ .header img{position: relative;top: 15px;left: 10%;}
+ .header span{position: relative;left: 15%;top: 15px}
+ .header span:hover{cursor: pointer;}
+ .container{width: 100%;height: 780px;}
+ .content{width: 100%;height: 750px;}
+ .nav{width: 800px;background:#242424;height: 500px;margin: 0 auto;position:relative;top:150px;opacity: 0.8;}
+
+.box{border-style: solid;border-width: 2px;border-color: white;width:30%;height: 28%;float: left;margin-left: 21px;margin-top: 20px;font-family: "Arial";font-size: 34px;text-align:center ;color: white;line-height:120px;}
+
+.box h3{color: white;padding: 0 auto;}
+.box:hover{cursor: pointer;background:#CFCFCF;color: black; }
+.box:active{color: black;background: white;}
+
+ .bh{float: right;margin-right:10%;color: orange;font-family: "Arial";margin-top:25px;}
+ .bh:hover{color: white;}
+ .clear{ clear:both} 
+ .bottom{width: 100%;height: 50px;margin: 0 auto;}
+.bottom p{color: white;margin: 0 auto;}
+.ul1 a{color: orange}
+.pos{margin-top: 100px;}
+.con{width:500px;height:270px;margin: 0 auto;}
+.con li{list-style: none;float: left;font-size: 20px;}
+.num{margin-left: 52px;}
+.rating{margin-left: 70px;;}
+.fl{float:left;width:140px;}
+.co{margin-left:15px;}
+.nu{margin-left:20px;}
+.ra{margin-left:20px;}
+.cc{margin-left:75px;}
+.time{margin-left:90px;}
+.ti{width: 63px;}
+.tc{margin-left:100px;}
+.hh{margin-left: 20px;}
+.sp{width: 5px;font-size:20px;text-align: center;line-height: 24px;margin-left: 5px;}
+.mm{margin-left: 5px;}
+.pr{margin-left: 80px;}
+.ft{margin-left:15px;}
+.price{margin-left: 20px;}
+.com{background: orange;margin-left:20px;height: 25px;text-align: center;line-height: 15px;}
+ </style>
+ <body style="background-image: url(../img/header-bg.jpg);
+  background-repeat: repeat-x;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;height: 810px;width: 100%;">
+ <div class="container" >
+   <div class="header">
+<img src="../img/logo.ico"><span>Airline Booking</span>
+<a href="../index.html"><h3 class="bh">Home</h3></a>
+   </div>
+   <div class="content">
+
+
+     <div class="nav">
+	      <div class="box"  data-toggle="modal" data-target="#addFlight">Add Flight</div>
+        <div class="box" data-toggle="modal" data-target="#delFlight">Delete Flight</div>
+        <div class="box">Message</div>
+        <div class="box">Function</div>
+        <div class="box">Function</div>
+        <div class="box">Function</div>
+        <div class="box">Function</div>
+        <div class="box">Function</div>
+        <div class="box">Function</div>
+        
+     </div>
+
+
+
+
+   </div>
+
+   <center>
+    <div class="bottom"><p>Copyright © 2016 BTH.&nbsp;PA2515&nbsp;Team 8.   &nbsp;All rights reserved.</p>
+          <ul class="ul1">
+           <a href="">Privacy Policy</a><span> &nbsp;|&nbsp;</span>
+           <a href="">Terms of Use</a><span>&nbsp;|&nbsp;</span>
+           <a href="">Need Help?</a>
+          </ul>
+      </div>
+      </center>
+ </div>
+ 
+ 
+ 
+ <div class="modal fade pos" id="addFlight" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog" >
+		<div class="modal-content">
+		<form action="">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+				<h4 class="modal-title" id="myModalLabel">
+					Add New Flight
+				</h4>
+			</div>
+			<div class="modal-body">
+			<div class="con">
+				<ul>
+				    <li >Company</li>
+				    <li class="num">Flight Number</li>
+				    <li class="rating">Rating</li>
+				</ul>
+				<br>
+				<input class="fl co">
+				<input class="fl nu">
+				<input class="fl ra">
+				<br><br>
+				<ul>
+				    <li >From City</li>
+				    <li class="cc">City Code</li>
+				    <li class="time">Time</li>
+				</ul>
+				<br>
+				<input class="fl co">
+				<input class="fl nu">
+				<input class="fl co ti hh"><span class="fl sp">:</span>
+				<input class="fl nu ti mm">
+				<br><br>
+				<ul>
+				    <li >To City</li>
+				    <li class="tc">City Code</li>
+				    <li class="time">Time</li>
+				</ul>
+				<br>
+				<input class="fl co">
+				<input class="fl nu">
+				<input class="fl co ti hh"><span class="fl sp">:</span>
+				<input class="fl nu ti mm">
+					<br><br>
+				<ul>
+				    <li >Flying Time</li>
+				    <li class="pr">Price</li>
+				 
+				</ul>
+				<br>
+				<input class="fl ft">
+				<input class="fl price">
+				<input class="btn btn-defult fl com" type="button" value="Add Flight">
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close
+				</button>
+				<button type="button" class="btn btn-primary">
+					Confirm
+				</button>
+			</div>
+		 </form>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal -->
+</div>
+ 
+  <div class="modal fade pos" id="delFlight" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog" >
+		<div class="modal-content">
+		<form action="">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+				<h4 class="modal-title" id="myModalLabel">
+					Delete Flight
+				</h4>
+			</div>
+			<div class="modal-body">
+		   
+		    <span>&nbsp;&nbsp;&nbsp;&nbsp;Flight Number:</span><input> <span>&nbsp;&nbsp;&nbsp;Password:</span> <input>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close
+				</button>
+				<button type="button" class="btn btn-primary">
+					Confirm
+				</button>
+			</div>
+		 </form>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal -->
+</div>
+ 
+ 
+ </body>
+ </html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <LINK href="../img/logo.ico" type=image/x-icon rel="shortcut icon" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Airline Booking System</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+
+
+
+<script src="../jquery/jquery-3.1.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+ </head>
+ <body>
+ <div style="width:400px;margin:0 auto;margin-top: 100px;">
+ <form action="" method="post">
+	<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Pease input your information
+					</h3>
+				</div>
+				<style>
+				.email{width:100%}
+				.first{width:49%}
+				.last{width:49%;margin-left: 2px;}
+				.tel{width:100%}
+				</style>
+				<div class="panel-body">
+					<h5>Your Email:</h5>
+					<input class="email" placeholder="xyz@domain.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+					<h5>Your  Name:</h5>
+					<input class="first" placeholder="First" required>			
+					<input class="last" placeholder="Last" required>
+					<h5>Your  Telphone:</h5>
+					<input class="tel" placeholder="+"  required onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" maxlength="9" required >
+				</div>
+				<div class="panel-footer">
+					<center><button type="submit" class="btn btn-primary">Retrive Password</button></center>
+				</div>
+			</div>
+</form>
+</div>
+ </body>
+ </html>

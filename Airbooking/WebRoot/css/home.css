@@ -1,0 +1,40 @@
+.content { height:100%;width:100%;color:white; }
+.container { height:760px;width:100%; }
+.header{background:#242424;width: 800px;height:80px ;opacity: 0.9;color: orange;font-size: 30px;font-family: "Arial";}
+ .header img{position: relative;top: 15px;left: 10%;}
+ .header span{position: relative;left: 15%;top: 15px}
+ .header span:hover{cursor: pointer;}
+ .ulb span{color:white;}
+  .ulb a{color:orange;}
+  .ulb a:hover{color:white;}
+.bh{float: right;color: white;font-family: "Arial";margin-top:20px;font-size: 20px;position:relative;right:10%;}
+ .bh:hover{color: white;}
+.help{float: right;position:relative;right:12%;color: orange;font-family: "Arial";font-size: 20px;margin-top:15px;text-decoration:none;}
+ .help:hover{color: white;text-decoration:none;}
+
+.d1 {width: 900px;height: 150px;opacity: 0.9;background:#242424; margin: 0 auto;position: relative;top: 200px;}
+ .lable{float: left; height: 20px;}
+ .l1{position: relative;left: 0px;}
+ .l2{position: relative;left: 120px;}
+ .l3{position: relative;left:200px;}
+.inp{color: black;float: left;margin-left: 20px;}
+.i1 {width:260px;}
+.i2{margin-left: 0px;}
+.ex {font-color: black;float:left;}.ex:hover{cursor:pointer;}
+.exi{color:white;width:50px;heihgt:50px;margin-top:6px;float:left;}
+
+.date {width:172px;}
+.search{background:#9ACD32 ; height: 44px;font-size:18px;}
+.search:hover{background:#9BCD9B; color: white;}
+.search:active{background:#87CEEB; color: white;}
+.test{color: black;margin-bottom: 200px;}
+ .bot{width: 100%;height: 50px;position: relative;bottom: 20px;}
+.bot p{color: white;margin: 0 auto;}
+.air-booking{margin-left: 15px;}
+.lg{width: 370px;}
+.d2 p{float: left;margin-top:10px;font-size:18px; }
+.header{background:#242424;width: 100%;height:80px ;opacity: 0.9;}
+.login{margin: 0 auto;height:210px;}
+.pos{margin-top:150px;}
+.cbox {float: left;margin-left: 10px; }
+.clear{ clear:both} 

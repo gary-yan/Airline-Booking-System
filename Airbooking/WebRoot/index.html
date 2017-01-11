@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<LINK href="img/ab.png" type=image/x-icon rel="shortcut icon" />
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>Airline Booking System</title>
+
+<!-- 必备-->
+<link href="css/auto.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+
+<script src="jquery/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+
+<script type="text/javascript" src="jquery/jquery.mockjax.js"></script>
+<script type="text/javascript" src="jquery/jquery.autocomplete.js"></script>
+<script type="text/javascript" src="js/countries.js"></script>
+<script type="text/javascript" src="js/demo.js"></script>
+<!-- 必备-->
+
+<link href="css/home.css" rel="stylesheet">
+<script type="text/javascript">
+	function validate() {
+		var email = document.getElementsByName("email")[0];
+		var password = document.getElementsByName("password")[0];
+
+
+
+
+
+		if (email.value.length < 1) {
+
+			alert("Enter your E-Mail please!");
+			return false;
+
+		} 
+
+		if (password.value.length < 1) {
+
+			alert("Enter your password please!");
+			return false;
+
+		}
+		return true;
+	}
+</script>
+</head>
+
+<body
+	style="background-image: url(img/header-bg.jpg);
+  background-repeat: repeat-x;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;height:870px;width: 100%;">
+
+
+	<div class="container ">
+
+
+
+
+		<div class="header">
+			<img src="img/ab.png"><span>Airline Booking</span>
+			<button class="btn btn-primary  bh" data-toggle="modal"
+				data-target="#myModal">LOGIN</button>
+		
+
+
+
+		</div>
+
+
+		<div class="content">
+
+
+			<div class="d1">
+				<div class="d2" style="height: 50px;width: 100%">
+					<p style="margin-left: 25px;">From:</p>
+					<p style="margin-left: 240px;">To:</p>
+					<p style="margin-left: 265px;">When:</p>
+				</div>
+				<form action="Search.jsp" method="post">
+					<input id="autocomplete-ajax-1" class="inp i1" type="text" name="from"
+						value="From City" onclick="this.select();" required> 
+					
+						<a class="ex"  onclick="change();" ><img class="exi" src="img/a.svg"></a>
+						
+						<input
+						class="inp i1 i2" type="text" name="to" id="autocomplete-ajax"
+						onclick="this.select();" value="To City" required /> <input
+						class="inp date" type="date" name="date1" value="Select Date" min="2017-01-09" max="2017-9-06" required>
+					<input class="inp search btn" type="submit"  value="Search">
+				</form>
+
+			</div>
+		</div>
+<script type="text/javascript">
+  function change(){
+	  var ex = document.getElementById("autocomplete-ajax").value;
+		 document.getElementById("autocomplete-ajax").value=document.getElementById("autocomplete-ajax-1").value; 
+		 document.getElementById("autocomplete-ajax-1").value = ex;
+		
+  }
+</script>
+
+		<center>
+			<div class="bot">
+				<p>Copyright © 2016 BTH.&nbsp;PA2515&nbsp;Team 8. &nbsp;All
+					rights reserved.</p>
+				<ul class="ulb">
+					<a href="">Privacy Policy</a>
+					<span> &nbsp;|&nbsp;</span>
+					<a href="">Terms of Use</a>
+					<span>&nbsp;|&nbsp;</span>
+					<a type="button" data-toggle="modal"
+				data-target="#contact">Need Help?</a>
+				</ul>
+			</div>
+		</center>
+
+
+
+	</div>
+
+
+
+	<!-- 模态框（Modal） -->
+	<div class="modal fade pos" id="myModal" tabindex="-1" role="dialog"
+		aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog" style="width: 400px;">
+			<div class="modal-content">
+				<div class="modal-header" style="background:#6B8E23;opacity: 0.9">
+					<button type="button" class="close" data-dismiss="modal"
+						aria-hidden="true">&times;</button>
+					<h4 class="modal-title" id="myModalLabel" style="color: white;">
+						Welcome!</h4>
+				</div>
+				<form action="Login.jsp" method="post" onsubmit="return validate()">
+					<div class="modal-body login">
+
+						<span><h4>E-Mail:</h4></span>
+						<input class="lg" type=""
+							name="email" placeholder="xyz@domain.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+					    <span><h4>Password:</h4></span>
+					    <input
+							 class="lg"  type="password" name="password"  required>
+						<div>
+						<a type="button"><span
+								style="margin-left: 0px;text-decoration: underline;"
+								class="cbox" data-toggle="modal"
+				data-target="#forgot">Forgot password?</span> </a>
+						</div>
+					</div>
+
+
+					<div class="modal-footer" style="background:#6B8E23;opacity: 0.9">
+
+						<button type="button" class="btn btn-default" data-dismiss="modal">Exit
+						</button>
+						<a href="si.html">
+							<button type="button" class="btn btn-default" href="sign up.html">Sign
+								up</button>
+						</a>
+						<button type="submit" class="btn btn-primary">Login</button>
+					</div>
+				</form>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal -->
+	</div>
+
+	<div class="modal fade" id="contact"  tabindex="-1" role="dialog"
+		aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog" style="width:430px;height: 200px;">
+			<div class="modal-content" >
+				<div class="modal-header" style="background:#6B8E23;opacity: 0.9">
+					<button type="button" class="close" data-dismiss="modal"
+						aria-hidden="true">&times;</button>
+					<h4 class="modal-title" id="myModalLabel" style="color: white;">
+						CONTACT US!</h4>
+				</div>
+				<form action="Contact.jsp" method="post" onsubmit="return validate()">
+					<div class="modal-body" style="boder:solid">
+                      <h3>Your E-Mail</h3>
+                      <input style="width:400px;">
+                      <h3>Please leave us a message:</h3>
+                      <textarea style="width:400px;height: 200px;font-size: 18px" name="message"></textarea>
+					</div>
+
+
+					<div class="modal-footer" style="background:#6B8E23;opacity: 0.9;font-size: 18px;">
+
+						
+						
+						<button type="submit" class="btn btn-primary">Submit</button>
+					</div>
+				</form>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal -->
+	</div>
+	
+	<div class="modal fade" id="forgot"  tabindex="-1" role="dialog"
+		aria-labelledby="myModalLabel" aria-hidden="true">
+		
+			<div class="modal-content" style="width:500px;margin:0 auto;margin-top:150px;" >
+			
+			 <div style="width:500px;margin:0 auto;margin-top:10px;">
+ <form action="" method="post">
+	<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Pease input your information
+					</h3>
+				</div>
+				<style>
+				.email{width:100%}
+				.first{width:49%;float: left;}
+				.last{width:49%;margin-left: 5px;float: left;}
+				.tel{width:100%}
+				</style>
+				<div class="panel-body">
+					<h5>Your Email:</h5>
+					<input class="email" placeholder="xyz@domain.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+					<h5>Your  Name:</h5>
+					<input class="first" placeholder="First" required>			
+					<input class="last" placeholder="Last" required>
+					<br><br>
+					<h5>Your  Telphone:</h5>
+					<input class="tel" placeholder="+"  required onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" maxlength="9" required >
+				</div>
+				<div class="panel-footer">
+					<center><button type="submit" class="btn btn-primary">Retrive Password</button></center>
+				</div>
+			</div>
+</form>
+</div>
+			</div>
+			<!-- /.modal-content -->
+		
+		<!-- /.modal -->
+	</div>
+</body>
+
+</html>

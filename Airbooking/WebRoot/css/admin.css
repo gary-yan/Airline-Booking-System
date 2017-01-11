@@ -1,0 +1,26 @@
+@CHARSET "UTF-8";
+ .header{background:#242424;width: 100%;height:80px ;opacity: 0.9;color: orange;font-size: 30px;font-family: "Arial";}
+ .header img{position: relative;top: 15px;left: 10%;}
+ .header span{position: relative;left: 15%;top: 15px}
+ .header span:hover{cursor: pointer;}
+ .container{width: 100%;height: 780px;}
+
+ .content{width:800px;height:auto;min-height:80%;margin:0 auto;margin-top:30px;background:#242424;opacity: 0.9;color:white;}
+ .content li{color:white;}
+ .bh{float: right;margin-right:10%;color: orange;font-family: "Arial";margin-top:25px;}
+ .bh:hover{color: white;}
+ .clear{ clear:both} 
+ .bottom{width: 100%;height: 50px;margin-top:20px;}
+.bottom p{color: white;margin: 0 auto;}
+.ul1 a{color: orange}
+.f1{font-family:"Arial";width: 250px;margin-left:20px;margin-top:40px;margin: 0 auto;}
+
+.f1 h5{color: white;}
+.name{width: 110px;}
+.password{width: 100%;}
+.f1 input{margin-top: px;color: black;}
+.dept{width: 15px;height: 15px;}
+
+.f1 span{color: white;font-size:12px;margin-left: 2px;}
+.b1{width: 30%;margin-top: 20px;margin-left:0px;}
+.b2{width: 30%;margin-top: 20px;margin-left:95px;}@CHARSET "UTF-8";
